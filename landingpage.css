@@ -1,0 +1,57 @@
+body{
+    background-color: #161320;
+}
+h1 , h2 , h3 , p{
+    color: white;
+}
+header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: PT Sans;
+    font-weight: bold;
+
+    /* fundo e posição */
+    height : 50px;
+    background-color:#A283E9;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#img {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    
+}
+
+#texto{
+    width:400px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+#texto h2 {
+    line-height: 5px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+#texto p{
+    font-size:18px;
+    line-height: 30px;
+}
+
+#texto hr{
+    
+    width:200px;
+    margin: 30px;
+    
+}
+.aboutme{
+    margin: 100px 200px;
+    display: flex;
+    justify-content: center;
+    font-family: PT Sans;
+}
