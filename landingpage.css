@@ -1,5 +1,7 @@
 body{
-    background-color: #161320;
+    background-image: url("imagens/fundo.png");
+    width: 1440px;
+    height: 1964px;
 }
 h1 , h2 , h3 , p{
     color: white;
@@ -12,9 +14,7 @@ header{
     font-weight: bold;
 
     /* fundo e posição */
-    height : 50px;
-    background-color:#A283E9;
-    padding-top: 25px;
+    padding-top: 12px;
     display: flex;
     justify-content: center;
 }
@@ -50,8 +50,9 @@ header{
     
 }
 .aboutme{
-    margin: 100px 200px;
+    margin: 150px 200px;
     display: flex;
     justify-content: center;
     font-family: PT Sans;
+    
 }
