@@ -1,22 +1,20 @@
 body{
-    background-image: url("imagens/fundo.png");
-    width: 1440px;
-    height: 1964px;
+    background-color: #292632;
 }
 h1 , h2 , h3 , p{
     color: white;
 }
 header{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 26px;
-    font-family: PT Sans;
-    font-weight: bold;
 
     /* fundo e posição */
-    padding-top: 12px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
+    background-image: url("imagens/fundo.jpg")
+}
+
+.imagem-arredondada {
+    border-radius: 50%;
 }
 
 #img {
@@ -27,7 +25,7 @@ header{
 }
 
 #texto{
-    width:400px;
+    width:600px;
     display: inline-block;
     line-height: 20px;
 }
@@ -49,8 +47,8 @@ header{
     margin: 30px;
     
 }
-.aboutme{
-    margin: 150px 200px;
+.divPadrao{
+    margin: 100px 200px;
     display: flex;
     justify-content: center;
     font-family: PT Sans;
