@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="landingpage.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans" />
-    <title>Leticia Gabriela </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Personal Portfolio</title>
 </head>
 <body>
 <header>
-    <div id="img"> <img src="imagens/FOTO.png" alt="Image" class="imagem-arredondada" height="300"> </div>
-</header>
-    <div class ="divPadrao">
-        
-        <div id="texto"> 
-            <h2> Sobre Mim</h2> 
-            <hr>
-            <p> 
-          Sou de Apucarana-PR, estou cursando Análise e desenvolvimento de Sistemas na Uninter tenho 20 anos, comecei na área com um estágio em desenvolvimento Backend.
-          Atualmente trabalho na mesma empresa que iniciei como estágiaria, porém agora como Analista de Sistemas Junior, atuando na área de desenvolvimento Backend. 
-        
-            </p><br>
-            <p>
-            Meus Hobbies são: praticar esportes, ler livros, assistir filmes e séries, jogar video game e viajar. 
-            </p>
-    
-        </div> 
-    </div>
-  <div class="divPadrao">
-    <div id="texto"> 
-        <h2>Formação</h2>
-        <hr>
-        <ul>
-            <li><p>Análise e desenvolvimento de Sistemas - Uninter</p></li>
-            <li><p>Full Stack Observability Practitioner Exam - New Relic University</p></li>
-            <li><p>New Relic Observability Foundations Badge - New Relic University</p></li>
-            <li><p>Formação PHP - Alura</p></li>
-        </ul>
-        
+  <img src="imagens/FOTO.png" alt="Image" class="imagem-arredondada">
+  <h1>Letícia Gabriela</h1>
+  <p>Analista de Sistemas | Dev Jr | Back-end</p>
+
+  <div class="card contact">
+    <div class="box-2">
+      <div class="btn btn-two">
+        <span>Contato</span>
+      </div>
     </div>
   </div>
-  <div class="divPadrao">
-    <div id="texto"> 
-        <h2>Experiência</h2>
-        <hr>
-        <ul>
-            <li><p>Analista de Sistemas Junior - 2023 - Atualmente</p></li>
-            <li><p>Estagiária de Desenvolvimento - 2022 - 2023</p></li>
-        </ul>
+</header>
+<div class="left-bg">
+  <div class="card about">
+    <h2>Sobre Mim</h2>
+    <hr>
+    <p>
+      Resido em Apucarana, PR, estudo Análise e Desenvolvimento de Sistemas na Uninter. Iniciei como estagiária em desenvolvimento Backend e agora sou Analista de Sistemas Júnior na mesma empresa. Meus interesses incluem esportes, leitura, filmes, séries, video games e viagens.
+    </p>
+  </div>
+</div>
+<div class="card education">
+  <h2>Formação</h2>
+  <hr>
+  <ul>
+    <li><p>Análise e desenvolvimento de Sistemas - Uninter</p></li>
+    <li><p>Full Stack Observability Practitioner Exam - New Relic University</p></li>
+    <li><p>New Relic Observability Foundations Badge - New Relic University</p></li>
+    <li><p>Formação PHP - Alura</p></li>
+  </ul>
+</div>
+<div class="card projects">
+
+  <h2>Projetos</h2>
+   <div class="slider-container">
+  <div class="slider">
+    <div class="slide" style="background-image: url('imagens/apimedicos.png');">
+      <a href="https://github.com/RealMendes/api_medicos"></a>
     </div>
+    <div class="slide" style="background-image: url('imagens/apicash.png');">
+      <a href="https://github.com/RealMendes/api_cashflow"></a>
+    </div>
+    <div class="slide" style="background-image: url('imagens/apilivros.png');">
+      <a href="https://github.com/RealMendes/API-LIVROS"></a>
+    </div>
+  </div>
 </div>
-<div class="divPadrao">
-    <div id="texto"> 
-        <h2>Portfólio</h2>
-        <hr>
-        <ul>
-            <li><p>Projeto 1</p></li>
-            <li><p>Projeto 2</p></li>
-            <li><p>Projeto 3</p></li>
-            <li><p>Projeto 4</p></li>
 </div>
-    
-    
-
-    
-
+<script src="script.js"></script>
 </body>
 </html>

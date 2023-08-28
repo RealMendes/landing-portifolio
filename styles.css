@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header about"
+    "header education"
+    "header projects"
+    "header contact";
+    min-height: 100vh;
+}
+
+@media (max-width: 1080px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+      "header"
+      "about"
+      "education"
+      "projects"
+      "contact";
+    }
+}
+
+header {
+    grid-area: header;
+    background-color: #292632;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.left-bg {
+    grid-area: about;
+    background-color: white;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education {
+    grid-area: education;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.imagem-arredondada {
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.slider-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    min-width: 50%;
+    height: 100px;
+    background-size: cover;
+}
+
+.slide a {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+.btn-two {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+.btn-two span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+}
