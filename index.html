@@ -1,61 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
 </head>
+
 <body>
-<header>
-  <img src="imagens/FOTO.png" alt="Image" class="imagem-arredondada">
-  <h1>Letícia Gabriela</h1>
-  <p>Analista de Sistemas | Dev Jr | Back-end</p>
 
-  <div class="card contact">
-    <div class="box-2">
-      <div class="btn btn-two">
-        <span>Contato</span>
-      </div>
+    <header>
+        <img src="imagens/FOTO.png" alt="Image" class="imagem-arredondada">
+        <h1>Letícia Gabriela</h1>
+        <p>Analista de Sistemas | Dev Jr | Back-end</p>
+        <div class="navbar">
+             <nav>
+            <ul>
+              <li><a href="#about-me">Sobre Mim</a></li>
+              <li><a href="#education-section">Formação</a></li>
+              <li><a href="#projects-section">Projetos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="btn"> Contato </button>
+      
+    </header>
+    <div class="left-bg">
+        <section id="about-me">
+        <div class="card about">
+            <h2>Sobre Mim</h2>
+            <hr>
+            <p>
+                Resido em Apucarana, PR, estudo Análise e Desenvolvimento de Sistemas na Uninter. Iniciei como
+                estagiária em desenvolvimento Backend e agora sou Analista de Sistemas Júnior na mesma empresa. Meus
+                interesses incluem esportes, leitura, filmes, séries, video games e viagens.
+            </p>
+        </div>
+    </section>
     </div>
-  </div>
-</header>
-<div class="left-bg">
-  <div class="card about">
-    <h2>Sobre Mim</h2>
-    <hr>
-    <p>
-      Resido em Apucarana, PR, estudo Análise e Desenvolvimento de Sistemas na Uninter. Iniciei como estagiária em desenvolvimento Backend e agora sou Analista de Sistemas Júnior na mesma empresa. Meus interesses incluem esportes, leitura, filmes, séries, video games e viagens.
-    </p>
-  </div>
-</div>
-<div class="card education">
-  <h2>Formação</h2>
-  <hr>
-  <ul>
-    <li><p>Análise e desenvolvimento de Sistemas - Uninter</p></li>
-    <li><p>Full Stack Observability Practitioner Exam - New Relic University</p></li>
-    <li><p>New Relic Observability Foundations Badge - New Relic University</p></li>
-    <li><p>Formação PHP - Alura</p></li>
-  </ul>
-</div>
-<div class="card projects">
+    <section id="education-section">
+    <div class="card education">
+        <h2>Formação</h2>
+        <hr>
+        <ul>
+            <li>
+                <p>Análise e desenvolvimento de Sistemas - Uninter</p>
+            </li>
+            <li>
+                <p>Full Stack Observability Practitioner Exam - New Relic University</p>
+            </li>
+            <li>
+                <p>New Relic Observability Foundations Badge - New Relic University</p>
+            </li>
+            <li>
+                <p>Formação PHP - Alura</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section id="projects-section">
+    <div class="card projects">
 
-  <h2>Projetos</h2>
-   <div class="slider-container">
-  <div class="slider">
-    <div class="slide" style="background-image: url('imagens/apimedicos.png');">
-      <a href="https://github.com/RealMendes/api_medicos"></a>
+        <h2>Projetos</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide" style="background-image: url('imagens/apimedicos.png');">
+                    <a href="https://github.com/RealMendes/api_medicos"></a>
+                </div>
+                <div class="slide" style="background-image: url('imagens/apicash.png');">
+                    <a href="https://github.com/RealMendes/api_cashflow"></a>
+                </div>
+                <div class="slide" style="background-image: url('imagens/apilivros.png');">
+                    <a href="https://github.com/RealMendes/API-LIVROS"></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="slide" style="background-image: url('imagens/apicash.png');">
-      <a href="https://github.com/RealMendes/api_cashflow"></a>
-    </div>
-    <div class="slide" style="background-image: url('imagens/apilivros.png');">
-      <a href="https://github.com/RealMendes/API-LIVROS"></a>
-    </div>
-  </div>
-</div>
-</div>
-<script src="script.js"></script>
+</section>
+    <dialog>
+        <div class="container">
+            <button class="close">x</button>
+            <h1>Entre em contato</h1>
+            <form id="contact-form" method="post">
+                <div class="input-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_subject" value="Novo Contato - Site">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+                <p id="confirmation-message" style="display: none; color: #0b0322;">Contato feito com sucesso!</p>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

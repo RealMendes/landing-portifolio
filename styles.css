@@ -92,51 +92,110 @@ header {
     line-height: 50px;
     height: 50px;
     text-align: center;
-    width: 250px;
+    width: 100px;
     cursor: pointer;
+    border-style: groove;
+    border: none;
+    font-family: Arial; /* Escolha uma fonte bonita */
+    font-size: 18px;
+    color: white;
+    background-color: #0b0322;
+
+  }
+
+  .btn:hover {
+    background-color: #e0e0e0;
+    color: #0b0322;
+  }
+
+  .btn:active {
+    background-color: #e0e0e0;
+    color: #0b0322;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.btn-two {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
+dialog{
+    border: none;
+    border-radius: .5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
 }
-.btn-two span {
-    z-index: 2;
+.container {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  .container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group label {
     display: block;
-    position: absolute;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .input-group input {
     width: 100%;
-    height: 100%;
-}
-.btn-two::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .input-group textarea {
     width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 1px solid rgba(255,255,255,0.2);
-    background-color: rgba(255,255,255,0.1);
-}
-.btn-two::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 1px solid rgba(255,255,255,0.2);
-    background-color: rgba(255,255,255,0.1);
-}
-.btn-two:hover::before {
-    transform: rotate(-45deg);
-    background-color: rgba(255,255,255,0);
-}
-.btn-two:hover::after {
-    transform: rotate(45deg);
-    background-color: rgba(255,255,255,0);
-}
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+  }
+  .input-group button {
+    background-color: #0b0322;;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+
+  nav {
+    color: white;
+    text-align: center;
+
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar{
+    
+padding-left: 3rem;
+padding-bottom: 1rem;
+  }
